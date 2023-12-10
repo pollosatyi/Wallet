@@ -1,11 +1,8 @@
-USE walbase;
-GO
-CREATE PROCEDURE ProductSummary AS
-BEGIN
-CREATE TABLE Wallets1(
+CREATE TABLE Wallets(
 id BIGINT IDENTITY(1,1) PRIMARY KEY,
 rub_usd DECIMAL(18,4) DEFAULT(0),
 rub_eur DECIMAL(18,4) DEFAULT(0),
 usd_eur DECIMAL(18,4) DEFAULT(0)
 )  
-END
+
+/*Создание таблицы База кошельков *\
