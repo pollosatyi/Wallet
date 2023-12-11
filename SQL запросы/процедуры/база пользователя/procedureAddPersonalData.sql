@@ -7,7 +7,7 @@ CREATE PROCEDURE ADD_PersonalData /* PersonalData*/
 				 @Birthdate date
 AS
 BEGIN
-    INSERT INTO PersonalData
+    INSERT INTO Personal_data
 	(
 	 Firstname,
 	 Surname,
