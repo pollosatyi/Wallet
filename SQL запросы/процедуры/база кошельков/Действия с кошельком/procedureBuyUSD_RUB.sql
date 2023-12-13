@@ -7,6 +7,6 @@ BEGIN
 IF @temp_rub > (SELECT rub FROM Wallets)
 RETURN
 UPDATE Wallets
-SET usd_rub= @temp_rub/(SELECT usd FROM test_course_table)
+SET usd_rub=usd_rub  +( @temp_rub/(SELECT usd FROM test_course_table))
 END;
 EXEC withdrawal_from_account @temp_rub;
