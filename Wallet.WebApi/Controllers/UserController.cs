@@ -18,11 +18,11 @@ namespace Wallet.WebApi.Controllers
         }
 
         // GET api/<UserController>/5
-        [HttpGet("{id}")]
-        public ActionResult Get(int id)
-        {
-            return Ok(UserRepository.Users.FirstOrDefault(u => u._user_id == id));
-        }
+        //[HttpGet("{id}")]
+        //public ActionResult Get(int id)
+        //{
+        //    return Ok(UserRepository.Users.FirstOrDefault(u => u.UserId == id));
+        //}
 
         // POST api/<UserController>
         [HttpPost]
