@@ -25,6 +25,11 @@ namespace Wallet.Common.Entities.UserEntities
             _email = email;
         }
 
+        public User()
+        {
+
+        }
+
         //public User() { }
     }
 }
